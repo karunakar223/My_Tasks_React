@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-app-container {
+  display: flex;
+  font-family: 'Roboto';
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  background-color: #1a171d;
+  min-height: 100vh;
+}
+.my-task-container {
+  width: 60%;
+  background-color: #000000;
+  padding: 30px;
+}
+.my-header {
+  color: #f3aa4e;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+.label {
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 600;
+}
+.text-field {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 12px;
+  height: 40px;
+  width: 300px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.select {
+  height: 40px;
+  width: 300px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 12px;
+}
+.submit {
+  color: #ffffff;
+  background-color: #f3aa4e;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  height: 45px;
+  width: 120px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+.btn-container {
+  text-align: center;
+}
+.tags {
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+}
+li {
+  list-style-type: none;
+}
+.active {
+  background-color: #f3aa4e;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  height: 35px;
+  width: auto;
+  border: 1px solid #f8fafc;
+  margin-right: 9px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn-filter {
+  color: #f1f5f9;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  height: 35px;
+  width: auto;
+  border: 1px solid #f8fafc;
+  margin-right: 9px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.paragraph {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.task {
+  color: #323f4b;
+  background-color: #f3aa4e;
+  height: 40px;
+  width: auto;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.tasks-container {
+  background-color: #1a171d;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+.errorMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: 700;
+  height: 100px;
+  width: auto;
+}
+
+.ul-container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .my-app-container {
+    flex-direction: column;
+  }
+  .input-container {
+    min-height: 30%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .my-task-container {
+    width: 100%;
+  }
+  .ul-container {
+    flex-wrap: wrap;
+  }
+  .li-container {
+    margin-bottom: 8px;
+  }
+}
